@@ -1,0 +1,22 @@
+#####
+#
+# Workload Manager (Template Deploy Service)
+# test: CreateStack
+#
+#----- request parameters -----
+{
+	"stack_name": "soken00_wlmTestStackYAML12NonAutoScaling",
+#	"template_url": "https://github.com/openstack/heat-templates/tree/master/cfn/F17/WordPress_Single_Instance.template",
+	"template": "FILE=test012_template.NonAutoScalingMultiAZ.yaml",
+#	"environment": "",
+#	"files": "",
+	"parameters": {
+		"InstanceType": "m1.medium",
+		"AWSRegionArch2AMI": "jp-east-1a",
+		"KeyName": "defaultkeyname",
+		"SSHLocation": "0.0.0.0/0"
+#		"Ec2Instance": "=192.168.1.11"
+	}
+#	"timeout_mins": "",
+#	"disable_rollback": ""
+}

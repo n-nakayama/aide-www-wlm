@@ -1,0 +1,13 @@
+#####
+#
+# Workload Manager (Template Deploy Service)
+# test: scenario CFN3.6 for TEST
+#
+#----- request parameters -----
+{
+	"stack_name": "soken00_wlmTestCFN3_6_TEST_FIP",
+	"template": "FILE=t00b_test.template.yaml"
+#	"parameters": {
+#		"key_name": "soken00-key-wlm"
+#	}
+}

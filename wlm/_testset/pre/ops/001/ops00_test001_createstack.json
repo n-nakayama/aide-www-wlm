@@ -1,0 +1,15 @@
+#
+# createStack test
+# request parameters
+#
+{
+    "DefaultSshKeyName": "defaultkey",
+	"Name": "soken00_wlmTestOpsStack01",
+	"DefaultInstanceProfileArn": "defaultInstanceProfileArn",
+	"Region": "region",
+	"ServiceRoleArn": "ServiceRoleArn",
+	"CustomCookbooksSource": {
+	    "Type": "git",
+	    "Url": "https://github.com/aws/opsworks-cookbooks.git"
+	}
+}

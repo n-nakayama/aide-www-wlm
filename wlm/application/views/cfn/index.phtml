@@ -1,0 +1,90 @@
+<html>
+<head>
+	<title>Workload Manager TemplateDeployService API Sample</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"> </script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js"></script>
+	<script type="text/javascript" src="js/itemlist.js"></script>
+-->
+</head>
+<body>
+	<b>Workload Manager TemplateDeployService API Sample</b>(CloudFormation)<br>
+	[ <a href="/wlm/">Home</a> | <a href="[+baseurl+]">Top</a> ]
+	- locale=ja or en, views/[+MODELS+]/index.phtml<br>
+	Users: [+users+]<br>
+	<!-- <li>Endpoint: <b>[+FQDN_CFN+]</b> (Identity=[+FQDN_IAM+])</li> -->
+	<li>Endpoint(Identity): [+FQDN_IAM+] <small>(api: [+FQDN_EP+])</small></li>
+
+<!-- REMOVE:START users -->
+<!-- SEARCH:users1 -->
+[+comm+]<font size=+1><strong>[+userid+]</strong></font>
+<!-- SEARCH:users2 -->
+[+comm+]<a href='[+baseurl+]/index/service/uid/[+userid+]'>[+userid+]</a>
+<!-- SEARCH:END -->
+<!-- REMOVE:END -->
+	<br>
+
+<!-- REMOVE:START apis__ -->
+<!-- SEARCH:api1 -->
+<!--
+<li>
+	<a href='[+baseurl+]/index/service/uid/[+userid+]/[+MODELS+]/UpdateStack'>UpdateStack</a>(test)
+	[
+	<a href='[+baseurl+]/index/service/uid/[+userid+]/[+MODELS+]/UpdateStack?stackname=STACKNAME&stackid=STACKID'>UpdateStack(nameAndId)</a>
+	]
+</li>
+-->
+<li><a href='[+baseurl+]/index/service/uid/[+userid+]/[+MODELS+]/ListStackData'>ListStackData</a></li>
+<li>
+	<a href='[+baseurl+]/index/service/uid/[+userid+]/[+MODELS+]/CreateStack'>CreateStack</a>
+</li>
+<li>
+	<a href='[+baseurl+]/index/service/uid/[+userid+]/[+MODELS+]/ValidateTemplate'>ValidateTemplate</a>
+	[
+	<a href='[+baseurl+]/index/service/uid/[+userid+]/[+MODELS+]/ValidateTemplate?template=00'>simple(AWS)</a> |
+	<a href='[+baseurl+]/index/service/uid/[+userid+]/[+MODELS+]/ValidateTemplate?template=01'>simple(HOT)</a> |
+	<a href='[+baseurl+]/index/service/uid/[+userid+]/[+MODELS+]/ValidateTemplate?template=02'>simple(yaml)</a> |
+	<a href='[+baseurl+]/index/service/uid/[+userid+]/[+MODELS+]/ValidateTemplate?template=09'>Sample(PF)</a> |
+	<a href='[+baseurl+]/index/service/uid/[+userid+]/[+MODELS+]/ValidateTemplate?template=11'>simpleEC2web</a> |
+	<a href='[+baseurl+]/index/service/uid/[+userid+]/[+MODELS+]/ValidateTemplate?template=12'>simpleRubyonRails</a> ||
+	<a href='[+baseurl+]/index/service/uid/[+userid+]/[+MODELS+]/ValidateTemplate?templateurl'>template_url</a> |
+	<a href='[+baseurl+]/index/service/uid/[+userid+]/[+MODELS+]/ValidateTemplate?template'>template</a>
+	]
+</li>
+<!-- SEARCH:END -->
+<!-- REMOVE:END -->
+
+
+	<!-- メッセージとコンテンツが埋め込まれる -->
+	<hr>
+	<b>[+title+]</b><br>
+	[+requesturi+]
+	[+form+]
+	<b>[+message+]</b><br>
+	<!-- コンテンツが埋め込まれる -->
+	[+content+]
+	<!-- 一覧表示 -->
+	[+listitemstitle+]<br>
+	[+listitems+]
+</body>
+</html>
+<!-- REMOVE:START form -->
+<!-- SEARCH:START formkwds -->
+<form method="get" action="[+indexphp+]" >
+	<input type="hidden" name="uid" value="[+uid+]" />
+	<input type="hidden" name="a" value="[+a+]" />
+	<input type="text" name="kwds" value="[+kwds+]" size=36 placeholder="keywords" />
+	<input type="submit" name="submit" value="[+submitvalue+]" />
+</form>
+<!-- SEARCH:START formcrimage --><!-- ※未使用 -->
+<form method="get" action="[+indexphp+]" >
+	<input type="hidden" name="uid" value="[+uid+]" />
+	<input type="hidden" name="a" value="[+a+]" />
+	<input type="hidden" name="vid" value="[+vid+]" />
+	<input type="hidden" name="id" value="[+id+]" />
+	Pools:<input type="text" name="pools" value="[+pools+]" size=36 />
+	<input type="submit" name="submit" value="[+submitvalue+]" />
+</form>
+<!-- SEARCH:END -->
+<!-- REMOVE:END -->

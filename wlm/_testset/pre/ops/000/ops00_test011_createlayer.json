@@ -1,0 +1,10 @@
+#
+# CreateLayer test
+# request parameters
+#
+{
+	"Name": "soken01_wlmTestOpsLayer01",
+	"Shortname": "soken01_wlmTOpsLayer01",
+	"StackId": "%stackid%",
+	"Type": "web"
+}

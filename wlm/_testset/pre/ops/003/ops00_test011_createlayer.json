@@ -1,0 +1,15 @@
+#
+# CreateLayer test
+# request parameters
+#
+{
+	"Name": "soken00_wlmTestOpsLayer01web",
+	"Shortname": "soken00_wlmTOpsLayer01web",
+	"StackId": "%stackid%",
+	"Type": "web",
+	"CustomRecipes": {
+		"Setup": [
+		    "test_suite"
+		]
+	}
+}

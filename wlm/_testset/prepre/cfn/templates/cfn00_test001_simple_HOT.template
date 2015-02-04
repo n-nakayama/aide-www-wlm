@@ -1,0 +1,18 @@
+{
+  "heat_template_version" : "2013-05-23",
+  "description" : "HOT CloudFormation Sample Template simple: ",
+  "resources" : {
+    "NovaInstance" : {
+      "type" : "OS::Nova::Server",
+      "properties" : {
+      	"flavor"   : "m1.medium",
+      	"image"    : "6417ef78-11bc-47e1-a745-21f0228f68a1",
+      	"key_name" : "defaultkey"
+      }
+	}
+  },
+  "outputs" : {
+    "Description" : "InstanceId of the newly created Nova instance",
+    "Value" : { "Ref" : "NovaInstance" }
+  }
+}

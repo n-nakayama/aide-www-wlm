@@ -1,0 +1,27 @@
+<!-- html content body -->
+<table border=1>
+[+content+]
+</table>
+<!-- REMOVE:START content -->
+
+<!-- SEARCH:formptn1 -->
+<!-- formptn1 -->
+<form method="POST" action="[+baseurl+]/index/service/uid/[+userid+]/cfn/[+apiname+]" enctype="multipart/form-data">
+	[+stackinfo+]
+	<input type="hidden" name="testfile" value="test" />
+	<input type="hidden" name="stackname" value="[+stackname+]" />
+	<input type="hidden" name="stackid" value="[+stackid+]" />
+	[+formmessage+]
+	<input type="file" name="files[]" id="files" multiple size=40 />
+	<input type="submit" name="submit" value=" submit " />
+</form>
+<!-- SEARCH:stackmsg_create -->
+	Select the testfile and template:<br>
+<!-- SEARCH:stackmsg_validate -->
+	Select the template:<br>
+<!-- SEARCH:stackinfo -->
+	Stackname: [+stackname+] ([+stackid+])<br>
+	Select testfile and template:<br>
+<!-- SEARCH:END -->
+
+<!-- REMOVE:END -->

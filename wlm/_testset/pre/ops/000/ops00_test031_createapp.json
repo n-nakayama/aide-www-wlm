@@ -1,0 +1,31 @@
+#
+# CreateApp test
+# request parameters
+#
+{
+#	"AppSource": {
+#		"Password": "string",
+#		"Revision": "string",
+#		"SshKey": "string",
+#		"Type": "string",
+#		"Url": "string",
+#		"Username": "string"
+#	},
+#	"Attributes": {
+#		"string" : "string"
+#	},
+	"Description": "soken00 wlm(ops) api test ",
+	"Domains": [
+		"wlm-ops.soken00.fujitsu.local"
+	],
+	"EnableSsl": false,
+	"Name": "soken00_OpsApp001",
+	"Shortname": "soken00_OApp001",
+	"SslConfiguration": {
+		"Certificate": "string",
+		"Chain": "string",
+		"PrivateKey": "string"
+	},
+	"StackId": "%stackid%",
+	"Type": "static"
+}

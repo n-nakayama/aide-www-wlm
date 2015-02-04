@@ -1,0 +1,15 @@
+#####
+#
+# Workload Manager (Template Deploy Service)
+# test: CreateStack
+# create: a.ide
+#
+#----- request parameters -----
+{
+	"stack_name": "soken00_wlmTestStackYAML12AutoScaling",
+	"template": "FILE=autoscale_modifiedByAide.yaml",
+#	"parameters": {
+#		"resourcekey": "RESOURCE_KEY"
+#	}
+	"timeout_mins": "2"
+}

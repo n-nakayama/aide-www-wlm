@@ -1,0 +1,39 @@
+#
+# createStack test
+# request parameters
+#
+#pattern1
+#CustomCookbooksSource="password=;revision=;sshkey=;type=;url=;username="
+#CustomJson=""
+DefaultAvailabilityZone=""
+DefaultSshKeyName=""
+DefaultSubnetId=""
+Name="soken00_wlmTestOpsStack01"
+#UseCustomCookbooks=false
+#UseOpesworksSecurityGroups=false
+
+#
+# example: multilines
+#
+## parama=<<<START
+## DATA
+## DATA
+## DATA
+## DATA
+## END;
+#
+
+#
+# example: importfile
+#
+## paramName=FILE=importfile_name
+#
+
+#:MEMO
+#
+# samplte template
+#
+#baseurl=https://github.com/openstack/heat-templates/tree/master/cfn/F17
+#templateUrl=MySQL_Single_Instance.template
+#templateUrl=EC2WithEBSSample.template
+#

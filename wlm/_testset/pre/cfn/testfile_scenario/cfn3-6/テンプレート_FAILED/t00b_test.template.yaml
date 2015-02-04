@@ -1,0 +1,38 @@
+heat_template_version: 2013-05-23
+
+description: >
+  WLM(cfn) scenario test CFN-3-6A. test template
+
+parameters:
+  # key name
+  key_name:
+    description: The EC2 Key Pair to allow SSH access to the instances
+    type: string
+
+resources:
+  #network
+  private_net:
+    type: OS::Neutron::Net
+    properties:
+      name: soken00-network-private11
+
+  private_subnet:
+    type: OS::Neutron::Subnet
+    properties:
+      network_id: { get_resource: private_net }
+      cidr: 192.168.11.0/24
+
+  pool:
+    type: OS::Neutron::Pool
+    properties:
+      protocol: HTTP
+      #monitors: []
+      subnet_id: { get_resource: private_subnet }
+      lb_method: ROUND_ROBIN
+      vip:
+        protocol_port: 80
+
+outputs:
+  private_subnet_info:
+    description: private_subnet info
+    value: { get_attr: [private_subnet, show] }

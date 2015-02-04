@@ -1,0 +1,426 @@
+[ListStackData]
+{
+ "stacks": [
+   {
+     "creation_time": "2014-06-03T20:59:46Z",
+     "description": "sample stack",
+     "id": "3095aefc-09fb-4bc7-b1f0-f21a304e864c",
+     "links": [
+       {
+         "href": "http://192.168.123.200:8004/v1/eb1c63a4f77141548385f113a28f0f52/stacks/simple_stack/3095aefc-09fb-4bc7-b1f0-f21a304e864c",
+         "rel": "self"
+       }
+     ],
+     "stack_name": "simple_stack",
+     "stack_status": "CREATE_COMPLETE",
+     "stack_status_reason": "Stack CREATE completed successfully",
+     "updated_time": ""
+   },
+   {
+     "creation_time": "2014-06-03T20:59:46Z",
+     "description": "sample stack",
+     "id": "3095aefc-09fb-4bc7-b1f0-f21a304e864d",
+     "links": [
+       {
+         "href": "http://192.168.123.200:8004/v1/eb1c63a4f77141548385f113a28f0f52/stacks/simple_stack/3095aefc-09fb-4bc7-b1f0-f21a304e864c",
+         "rel": "self"
+       },
+       {
+         "href": "http://192.168.123.200:8004/v1/eb1c63a4f77141548385f113a28f0f52/stacks/simple_stack/3095aefc-09fb-4bc7-b1f0-f21a304e864c",
+         "rel": "self"
+       }
+     ],
+     "stack_name": "simple_stack2",
+     "stack_status": "CREATE_COMPLETE",
+     "stack_status_reason": "Stack CREATE completed successfully",
+     "updated_time": ""
+   }
+    ]
+}
+
+[FindStack]
+{
+  "stack": {
+    "capabilities": [],
+    "creation_time": "2014-06-04T20:36:12Z",
+    "description": "sample stack",
+    "disable_rollback": true,
+    "id": "5333af0c-cc26-47ee-ac3d-8784cefafbd7",
+    "links": [
+      {
+        "href": "http://192.168.123.200:8004/v1/eb1c63a4f77141548385f113a28f0f52/stacks/simple_stack/5333af0c-cc26-47ee-ac3d-8784cefafbd7",
+        "rel": "self"
+      }
+    ],
+    "notification_topics": [],
+    "outputs": [],
+    "parameters": {
+      "OS::stack_id": "5333af0c-cc26-47ee-ac3d-8784cefafbd7",
+      "OS::stack_name": "simple_stack"
+    },
+    "stack_name": "simple_stack",
+    "stack_status": "CREATE_COMPLETE",
+    "stack_status_reason": "Stack CREATE completed successfully",
+    "template_description": "sample stack",
+    "timeout_mins": null,
+    "updated_time": null
+  }
+}
+
+[FindStackEvents]
+{
+  "events": [
+    {
+      "resource_name": "my_instance",
+      "event_time": "2014-06-10T09:20:01Z",
+      "links": [
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869/resources/my_instance/events/65349fdb-b352-4f5a-8220-c740e3c40288",
+          "rel": "self"
+        },
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869/resources/my_instance",
+          "rel": "resource"
+        },
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869",
+          "rel": "stack"
+        }
+      ],
+      "logical_resource_id": "my_instance",
+      "resource_status_reason": "state changed",
+      "resource_status": "CREATE_IN_PROGRESS",
+      "physical_resource_id": null,
+      "id": "65349fdb-b352-4f5a-8220-c740e3c40288"
+    },
+    {
+      "resource_name": "my_instance",
+      "event_time": "2014-06-10T09:22:13Z",
+      "links": [
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869/resources/my_instance/events/e3f75825-4440-4fbd-b443-e591a94871bf",
+          "rel": "self"
+        },
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869/resources/my_instance",
+          "rel": "resource"
+        },
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869",
+          "rel": "stack"
+        }
+      ],
+      "logical_resource_id": "my_instance",
+      "resource_status_reason": "state changed",
+      "resource_status": "CREATE_COMPLETE",
+      "physical_resource_id": "3a1dd15a-7c7e-456f-8a79-ac445bc39324",
+      "id": "e3f75825-4440-4fbd-b443-e591a94871bf"
+    }
+  ]
+}
+
+[FindStackResources]
+{
+  "resources": [
+    {
+      "resource_name": "my_instance",
+      "links": [
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869/resources/my_instance",
+          "rel": "self"
+        },
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869",
+          "rel": "stack"
+        }
+      ],
+      "logical_resource_id": "my_instance",
+      "resource_status_reason": "state changed",
+      "updated_time": "2014-06-10T09:20:00Z",
+      "required_by": [],
+      "resource_status": "CREATE_COMPLETE",
+      "physical_resource_id": "3a1dd15a-7c7e-456f-8a79-ac445bc39324",
+      "resource_type": "AWS::EC2::Instance"
+    }
+  ]
+}
+
+[GetStackTemplate]
+{
+  "outputs": {
+    "instance_ip": {
+      "description": "The IP address of the deployed instance",
+      "value": {
+        "get_attr": [
+          "my_instance",
+          "PublicIp"
+        ]
+      }
+    }
+  },
+  "heat_template_version": "2013-05-23",
+  "description": "Hello world HOT template that just defines a single compute instance. Contains just base features to verify base HOT support.",
+  "parameters": {
+    "db_password": {
+      "hidden": true,
+      "type": "string",
+      "description": "Database password",
+      "constraints": [
+        {
+          "length": {
+            "max": 8,
+            "min": 6
+          },
+          "description": "Password length must be between 6 and 8 characters"
+        },
+        {
+          "allowed_pattern": "[a-zA-Z0-9]+",
+          "description": "Password must consist of characters and numbers only"
+        },
+        {
+          "allowed_pattern": "[A-Z]+[a-zA-Z0-9]*",
+          "description": "Password must start with an uppercase character"
+        }
+      ]
+    },
+    "db_port": {
+      "default": 50000,
+      "type": "number",
+      "description": "Database port number",
+      "constraints": [
+        {
+          "range": {
+            "max": 60000,
+            "min": 40000
+          },
+          "description": "Port number must be between 40000 and 60000"
+        }
+      ]
+    },
+    "KeyName": {
+      "type": "string",
+      "description": "Name of an existing key pair to use for the instance"
+    },
+    "InstanceType": {
+      "default": "m1.small",
+      "type": "string",
+      "description": "Instance type for the instance to be created",
+      "constraints": [
+        {
+          "description": "Value must be one of 'm1.tiny', 'm1.small' or 'm1.large'",
+          "allowed_values": [
+            "m1.tiny",
+            "m1.small",
+            "m1.large"
+          ]
+        }
+      ]
+    },
+    "ImageId": {
+      "type": "string",
+      "description": "ID of the image to use for the instance"
+    }
+  },
+  "resources": {
+    "my_instance": {
+      "type": "AWS::EC2::Instance",
+      "properties": {
+        "KeyName": {
+          "get_param": "KeyName"
+        },
+        "InstanceType": {
+          "get_param": "InstanceType"
+        },
+        "ImageId": {
+          "get_param": "ImageId"
+        }
+      }
+    }
+  }
+}
+
+[ListResourceEvents]
+{
+  "events": [
+    {
+      "resource_name": "my_instance",
+      "event_time": "2014-06-10T09:20:01Z",
+      "links": [
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869/resources/my_instance/events/65349fdb-b352-4f5a-8220-c740e3c40288",
+          "rel": "self"
+        },
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869/resources/my_instance",
+          "rel": "resource"
+        },
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869",
+          "rel": "stack"
+        }
+      ],
+      "logical_resource_id": "my_instance",
+      "resource_status_reason": "state changed",
+      "resource_status": "CREATE_IN_PROGRESS",
+      "physical_resource_id": null,
+      "id": "65349fdb-b352-4f5a-8220-c740e3c40288"
+    },
+    {
+      "resource_name": "my_instance",
+      "event_time": "2014-06-10T09:22:13Z",
+      "links": [
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869/resources/my_instance/events/e3f75825-4440-4fbd-b443-e591a94871bf",
+          "rel": "self"
+        },
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869/resources/my_instance",
+          "rel": "resource"
+        },
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869",
+          "rel": "stack"
+        }
+      ],
+      "logical_resource_id": "my_instance",
+      "resource_status_reason": "state changed",
+      "resource_status": "CREATE_COMPLETE",
+      "physical_resource_id": "3a1dd15a-7c7e-456f-8a79-ac445bc39324",
+      "id": "e3f75825-4440-4fbd-b443-e591a94871bf"
+    }
+  ]
+}
+
+[ListResources]
+{
+  "resources": [
+    {
+      "resource_name": "my_instance",
+      "links": [
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869/resources/my_instance",
+          "rel": "self"
+        },
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869",
+          "rel": "stack"
+        }
+      ],
+      "logical_resource_id": "my_instance",
+      "resource_status_reason": "state changed",
+      "updated_time": "2014-06-10T09:20:00Z",
+      "required_by": [],
+      "resource_status": "CREATE_COMPLETE",
+      "physical_resource_id": "3a1dd15a-7c7e-456f-8a79-ac445bc39324",
+      "resource_type": "AWS::EC2::Instance"
+    }
+  ]
+}
+
+[ListStackEvents]
+{
+  "events": [
+    {
+      "resource_name": "my_instance",
+      "event_time": "2014-06-10T09:20:01Z",
+      "links": [
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869/resources/my_instance/events/65349fdb-b352-4f5a-8220-c740e3c40288",
+          "rel": "self"
+        },
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869/resources/my_instance",
+          "rel": "resource"
+        },
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869",
+          "rel": "stack"
+        }
+      ],
+      "logical_resource_id": "my_instance",
+      "resource_status_reason": "state changed",
+      "resource_status": "CREATE_IN_PROGRESS",
+      "physical_resource_id": null,
+      "id": "65349fdb-b352-4f5a-8220-c740e3c40288"
+    },
+    {
+      "resource_name": "my_instance",
+      "event_time": "2014-06-10T09:22:13Z",
+      "links": [
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869/resources/my_instance/events/e3f75825-4440-4fbd-b443-e591a94871bf",
+          "rel": "self"
+        },
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869/resources/my_instance",
+          "rel": "resource"
+        },
+        {
+          "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869",
+          "rel": "stack"
+        }
+      ],
+      "logical_resource_id": "my_instance",
+      "resource_status_reason": "state changed",
+      "resource_status": "CREATE_COMPLETE",
+      "physical_resource_id": "3a1dd15a-7c7e-456f-8a79-ac445bc39324",
+      "id": "e3f75825-4440-4fbd-b443-e591a94871bf"
+    }
+  ]
+}
+
+[ShowResourceData]
+{
+  "resource": {
+    "resource_name": "my_instance",
+    "description": "",
+    "links": [
+      {
+        "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869/resources/my_instance",
+        "rel": "self"
+      },
+      {
+        "href": "http://192.168.138.128:8004/v1/1f1605be142f4e23a7375b0b61f4cc47/stacks/stack_a/d0bb937d-9525-463b-a0ab-8f7c8d64d869",
+        "rel": "stack"
+      }
+    ],
+    "logical_resource_id": "my_instance",
+    "resource_status": "CREATE_COMPLETE",
+    "updated_time": "2014-06-10T09:20:00Z",
+    "required_by": [],
+    "resource_status_reason": "state changed",
+    "physical_resource_id": "3a1dd15a-7c7e-456f-8a79-ac445bc39324",
+    "resource_type": "AWS::EC2::Instance"
+  }
+}
+
+[ShowStackDetails]
+{
+  "stack": {
+    "capabilities": [],
+    "creation_time": "2014-06-03T20:59:46Z",
+    "description": "sample stack",
+    "disable_rollback": "True",
+    "id": "3095aefc-09fb-4bc7-b1f0-f21a304e864c",
+    "links": [
+      {
+        "href": "http://192.168.123.200:8004/v1/eb1c63a4f77141548385f113a28f0f52/stacks/simple_stack/3095aefc-09fb-4bc7-b1f0-f21a304e864c",
+        "rel": "self"
+      }
+    ],
+    "notification_topics": [],
+    "outputs": [],
+    "parameters": {
+      "OS::stack_id": "3095aefc-09fb-4bc7-b1f0-f21a304e864c",
+      "OS::stack_name": "simple_stack"
+    },
+    "stack_name": "simple_stack",
+    "stack_status": "CREATE_COMPLETE",
+    "stack_status_reason": "Stack CREATE completed successfully",
+    "template_description": "sample stack",
+    "timeout_mins": "",
+    "updated_time": ""
+  }
+}
+
+

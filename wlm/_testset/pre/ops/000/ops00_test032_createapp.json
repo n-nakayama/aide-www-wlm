@@ -1,0 +1,31 @@
+#
+# CreateApp test
+# request parameters
+#
+{
+	"AppSource": {
+#		"Password": "password",
+#		"Revision": "0.0.1",
+#		"SshKey": "sskeyname",
+		"Type": "git",
+		"Url": "https://github.com/n-nakayama/aidetest.git"
+#		"Username": "username"
+	},
+#	"Attributes": {
+#		"string" : "string"
+#	},
+	"Description": "soken00 wlm(ops) api test appsource",
+	"Domains": [
+		"wlm-ops.soken00.fujitsu.local"
+	],
+	"EnableSsl": false,
+	"Name": "soken00_OpsApp002",
+	"Shortname": "soken00_OApp002",
+	"SslConfiguration": {
+		"Certificate": "string",
+		"Chain": "string",
+		"PrivateKey": "string"
+	},
+	"StackId": "%stackid%",
+	"Type": "static"
+}

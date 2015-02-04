@@ -1,0 +1,47 @@
+#
+# CreateInstance test
+# request parameters
+#
+#  #image: 6417ef78-11bc-47e1-a745-21f0228f68a1
+#  image: centos-6.5-64bit-en-global-30g-20140908-1.0-simple
+#  flavor: m1.medium
+#ImageRef=""
+#AvailabilityZone=""
+Hostname="soken00_opsHost01"
+#CustomSecurityGroupIds=""
+#InstallUpdatesOnBoot=false
+#FlavorRef="m1.medium"
+InstanceType="m1.medium"
+LayerIds=""
+#Os="CentOS"
+SshKeyName="sshkeyname"
+StackId="%stackid%"
+#SubnetId=""
+
+
+#####
+#
+# example: multilines
+#
+## parama=<<<START
+## DATA
+## DATA
+## DATA
+## DATA
+## END;
+#
+
+#
+# example: importfile
+#
+## paramName=FILE=importfile_name
+#
+
+#:MEMO
+#
+# samplte template
+#
+#baseurl=https://github.com/openstack/heat-templates/tree/master/cfn/F17
+#templateUrl=MySQL_Single_Instance.template
+#templateUrl=EC2WithEBSSample.template
+#

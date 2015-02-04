@@ -1,0 +1,20 @@
+heat_template_version: 2013-05-23
+
+description: >
+  WLM(cfn) scenario test CFN-3-6. keypair creation.
+
+parameters:
+  key_name:
+    description: The EC2 Key Pair to allow SSH access to the instances
+    type: string
+
+resources:
+  ec2keypair:
+    type: OS::Nova::KeyPair
+    properties:
+      name: { get_param: key_name }
+
+outputs:
+  ec2keypair_info:
+    description: keypair info
+    value: { get_attr: [ec2keypair, public_key] }

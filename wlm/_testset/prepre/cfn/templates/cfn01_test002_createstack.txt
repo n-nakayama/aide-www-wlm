@@ -1,0 +1,39 @@
+#
+# createStack test
+# request parameters
+#
+#pattern1
+stack_name=soken00_wlmTestStack02
+#template_url=https://github.com/openstack/heat-templates/tree/master/cfn/F17/WordPress_Single_Instance.template
+template="FILE=cfn01_test002_wordPress_single_Instance.template"
+#environment=""
+#files=
+parameters="InstanceType=m1.medium;DBUsername=USERNAME;DBPassword=PASSWORD;KeyName=HEAT_KEY;LinuxDistribution=F17"
+#timeout_mins=
+#disable_rollback=
+
+#
+# example: multilines
+#
+## parama=<<<START
+## DATA
+## DATA
+## DATA
+## DATA
+## END;
+#
+
+#
+# example: importfile
+#
+## paramName=FILE=importfile_name
+#
+
+#:MEMO
+#
+# samplte template
+#
+#baseurl=https://github.com/openstack/heat-templates/tree/master/cfn/F17
+#templateUrl=MySQL_Single_Instance.template
+#templateUrl=EC2WithEBSSample.template
+#

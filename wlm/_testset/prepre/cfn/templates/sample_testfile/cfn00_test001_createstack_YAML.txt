@@ -1,0 +1,42 @@
+#####
+#
+# Workload Manager (Template Deploy Service)
+# test: CreateStack
+#
+#----- request parameters -----
+stack_name=soken00_wlmTestStackYAML01
+#template_url=https://github.com/openstack/heat-templates/tree/master/cfn/F17/WordPress_Single_Instance.template
+template="FILE=cfn00_test001_simple.template.yaml"
+#environment=""
+#files=
+#parameters="InstanceType=m1.medium;AWSRegionArch2AMI=jp-east-1;KeyName=HEAT_KEY;SSHLocation=0.0.0.0/0;Ec2Instance=192.168.1.11"
+#timeout_mins=
+#disable_rollback=
+#----- end -----
+
+#####
+#
+# example: multilines
+#
+## parameter=<<<START
+## DATA
+## DATA
+## DATA
+## DATA
+## END;
+#
+
+#
+# example: importfile
+#
+## paramName=FILE=importfile_name
+#
+
+#:MEMO
+#
+# samplte template
+#
+#baseurl=https://github.com/openstack/heat-templates/tree/master/cfn/F17
+#templateUrl=MySQL_Single_Instance.template
+#templateUrl=EC2WithEBSSample.template
+#

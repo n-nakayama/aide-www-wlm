@@ -1,0 +1,50 @@
+heat_template_version: 2013-05-23
+description: AutoScaling Test000x4 000x5 000x7 000x8
+resources:
+
+  web_server_group:
+    type: FJ::AutoScaling::AutoScalingGroup
+    properties:
+      AvailabilityZones: {'Fn::GetAZs': ''}
+      LaunchConfigurationName: {Ref: launch_config}
+      MinSize: '3'
+      MaxSize: '6'
+      VPCZoneIdentifier: [get_param: ${RESOURCE_KEY}subnet_web]
+      LoadBalancerNames:
+      - {Ref: elastic_load_balancer}
+
+  launch_config:
+    type: FJ::AutoScaling::LaunchConfiguration
+    properties:
+      ImageId: CentOS-6.5-mini_20141030.qcow2
+      InstanceType: m1.small
+      KeyName: ${RESOURCE_KEY}os-keypair
+
+  elastic_load_balancer:
+    type: FJ::ExpandableLoadBalancer::LoadBalancer
+    properties:
+      Subnets: [get_param: ${RESOURCE_KEY}subnet_web]
+      Listeners:
+      - {LoadBalancerPort: '80', InstancePort: '80',
+        Protocol: 'HTTP', InstanceProtocol: 'HTTP' }
+      HealthCheck: {Target: 'HTTP:80/', HealthyThreshold: '3',
+                   UnhealthyThreshold: '5', Interval: '30', Timeout: '5'}
+      Version: 2014-09-30
+      LoadBalancerName: load_balancer_name_web
+
+  web_server_scaleup_policy:
+    type: FJ::AutoScaling::ScalingPolicy
+    properties:
+      AdjustmentType: ChangeInCapacity
+      AutoScalingGroupName: {Ref: web_server_group}
+      Cooldown: '60'
+      ScalingAdjustment: '1'
+
+  web_server_scaledown_policy:
+    type: FJ::AutoScaling::ScalingPolicy
+    properties:
+      AdjustmentType: ChangeInCapacity
+      AutoScalingGroupName: {Ref: web_server_group}
+      Cooldown: '60'
+      ScalingAdjustment: '-1'
+

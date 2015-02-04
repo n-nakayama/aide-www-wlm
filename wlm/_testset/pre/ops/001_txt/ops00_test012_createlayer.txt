@@ -1,0 +1,43 @@
+#
+# CreateLayer test
+# request parameters
+#
+#Attributes=""
+#AutoAssignFloatingIps=false
+#CustomRecipes=""
+#CustomSecurityGroupIds=""
+#InstallUpdatesOnBoot=false
+Name="soken01_wlmTestOpsLayer02"
+#Packages=""
+Shortname="soken01_wlmTOpsLayer02"
+StackId="%stackid%"
+Type="java-app"
+#VolumeConfigurations=""
+
+
+#####
+#
+# example: multilines
+#
+## parama=<<<START
+## DATA
+## DATA
+## DATA
+## DATA
+## END;
+#
+
+#
+# example: importfile
+#
+## paramName=FILE=importfile_name
+#
+
+#:MEMO
+#
+# samplte template
+#
+#baseurl=https://github.com/openstack/heat-templates/tree/master/cfn/F17
+#templateUrl=MySQL_Single_Instance.template
+#templateUrl=EC2WithEBSSample.template
+#

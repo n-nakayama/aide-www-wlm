@@ -1,0 +1,10 @@
+#####
+#
+# Workload Manager (Template Deploy Service)
+# test: CreateStack
+#
+#----- request parameters -----
+{
+	"stack_name": "soken00_wlmTestStackYAML99_resourceGroup",
+	"template": "FILE=test99_resourcegroup.template.yaml"
+}

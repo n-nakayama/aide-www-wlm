@@ -1,0 +1,22 @@
+#####
+#
+# Workload Manager (Template Deploy Service)
+# test: CreateStack
+#
+#----- request parameters -----
+{
+	"stack_name": "soken00_wlmTestStackYAML02",
+	"template_url": "http://10.123.231.137/wlm/testset/cfntemplate/soken00_wlmAutoTestYAML01.template"
+#	"template": "FILE=cfn00_test001_simple.template.yaml"
+#	"environment": "",
+#	"files": "",
+#	"parameters": {
+#		"InstanceType": "m1.medium",
+#		"AWSRegionArch2AMI": "jp-east-1",
+#		"KeyName": "HEAT_KEY",
+#		"SSHLocation": "0.0.0.0/0",
+#		"Ec2Instance": "=192.168.1.11"
+#	}
+#	"timeout_mins": "",
+#	"disable_rollback": ""
+}

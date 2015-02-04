@@ -1,0 +1,51 @@
+heat_template_version: 2013-05-23
+
+description: >
+  updatestack, A Sample heat orchestration template for the prepre environment.
+
+parameters:
+  private_net_name:
+    type: string
+    description: Name of private network to be created
+    default: privateNet
+  private_net_cidr:
+    type: string
+    description: Private network address (CIDR notation)
+    default: 192.168.10.0/24
+
+resources:
+  # server
+  server_2:
+    type: OS::Nova::Server
+    properties:
+      #image: 6417ef78-11bc-47e1-a745-21f0228f68a1
+      image: centos-6.5-64bit-en-global-30g-20140908-1.0-simple
+      flavor: m1.medium
+      #flavor: 3
+      #key_name: defaultkey
+      networks:
+        - port: { get_resource: server1_port }
+
+  private_net:
+    type: OS::Neutron::Net
+    properties:
+      name: { get_param: private_net_name }
+
+  private_subnet:
+    type: OS::Neutron::Subnet
+    properties:
+      network_id: { get_resource: private_net }
+      cidr: { get_param: private_net_cidr }
+
+  server1_port:
+    type: OS::Neutron::Port
+    properties:
+      network_id: { get_resource: private_net }
+      fixed_ips:
+        - subnet_id: { get_resource: private_subnet }
+
+
+outputs:
+  server_2_show:
+    description: server_2 information.
+    value: { get_attr: [server_2, show] }

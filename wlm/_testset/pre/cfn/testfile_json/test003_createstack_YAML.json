@@ -1,0 +1,23 @@
+#####
+#
+# Workload Manager (Template Deploy Service)
+# test: CreateStack
+#
+#----- request parameters -----
+{
+	"stack_name": "soken00_wlmTestStackYAML03",
+#	"template_url": "https://github.com/openstack/heat-templates/tree/master/cfn/F17/WordPress_Single_Instance.template",
+	"template": "FILE=test003_simple.template.yaml",
+#	"environment": "",
+#	"files": "",
+	"parameters": {
+		"InstanceType": "m1.medium",
+		"Image": "CentOS-6.5-mini+",
+		"private_net_name": "soken00-network-private13"
+#		"private_net_cidr": "192.168.13.2"
+#		"KeyName": "HEAT_KEY",
+#		"SSHLocation": "0.0.0.0/0",
+	}
+#	"timeout_mins": "",
+#	"disable_rollback": ""
+}

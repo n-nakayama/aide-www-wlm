@@ -1,0 +1,15 @@
+#
+# CreateLayer test
+# request parameters
+#
+{
+	"Name": "soken00_wlmTestOpsLayer03db",
+	"Shortname": "soken00_wlmTOpsLayer03db",
+	"StackId": "%stackid%",
+	"Type": "db-master",
+	"CustomRecipes": {
+		"Setup": [
+		    "test_suite"
+		]
+	}
+}

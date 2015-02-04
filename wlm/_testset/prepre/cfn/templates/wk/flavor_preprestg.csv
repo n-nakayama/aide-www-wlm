@@ -1,0 +1,10 @@
+id,name,vcpu,ram,disk,swap
+200,ST-economy,null,1700,30,
+201,ST-standard,null,3400,30,
+202,ST-advanced,null,7800,30,
+203,ST-hige_performance,null,15000,30,
+205,ST-double_high,null,30000,30,
+207,ST-quad_high,null,60000,30,
+3,m1.medium,null,4096,40,
+4,m1.large,null,8192,80,
+5,m1.xlarge,null,16384,160,

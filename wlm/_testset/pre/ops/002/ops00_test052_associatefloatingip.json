@@ -1,0 +1,8 @@
+#
+# RegisterFloatingIp test
+# request parameters
+# チケット#2905 FIP 100.64.0.242, 100.64.0.243
+{
+	"ElasticIp": "100.64.0.242",
+	"InstanceId": "%instanceid%"
+}

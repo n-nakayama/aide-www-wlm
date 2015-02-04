@@ -1,0 +1,23 @@
+RewriteEngine on
+RewriteBase /wlm/pre/cfn
+RewriteRule !\.(js|ico|gif|jpg|png|css|htm|html|zip)$ index.php
+
+# RewriteRule ^(\*)/(\*)/(\*)/(\*)/(\*)$ 0100010/Sel0000
+
+# RewriteRule ^index/([a-zA-Z0-9_-]+)/([0-9]+).html$ product.php?id=$2
+
+# RewriteRule ^index([a-zA-Z0-9_-]+)$ index.php?id=$1
+# RewriteRule ^index/([a-zA-Z0-9_-]+)$ index.php?id=$1
+
+
+#
+# sample
+#
+##php_flag session.bug_compat_42 on
+##php_flag session.use_only_cookies on
+
+##RewriteEngine on
+##RewriteBase /kanri
+
+##RewriteRule !\.(js|ico|gif|jpg|png|css|html|php|jwg|fda|fdb|fdc|fdd|dxf|pdf|zip)$ index.php
+
